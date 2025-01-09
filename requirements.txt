@@ -20,7 +20,7 @@ chromadb
 rapidocr-onnxruntime
 pymupdf
 unstructured
-chromadb
 markdown
 spark-ai-python
 erniebot
+pysqlite3-binary
