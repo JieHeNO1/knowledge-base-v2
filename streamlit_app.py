@@ -9,8 +9,8 @@ from zhipuai_llm import ZhipuAILLM
 from langchain.vectorstores.chroma import Chroma
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
-# from dotenv import load_dotenv, find_dotenv
-# _ = load_dotenv(find_dotenv())    # read local .env file
+from dotenv import load_dotenv, find_dotenv
+_ = load_dotenv(find_dotenv())    # read local .env file
 
 
 #export OPENAI_API_KEY=
