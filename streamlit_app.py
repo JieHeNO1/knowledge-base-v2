@@ -9,6 +9,9 @@ from zhipuai_llm import ZhipuAILLM
 from langchain.vectorstores.chroma import Chroma
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
+import sys
+__import__("pysqlite3")
+sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv())    # read local .env file
 
